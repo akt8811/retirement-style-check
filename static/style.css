@@ -1,53 +1,38 @@
 body {
-    font-family: "Segoe UI", "Helvetica Neue", sans-serif;
-    background-color: #f9f9f9;
-    color: #333;
+    font-family: "Helvetica Neue", sans-serif;
+    background: #f8f8f8;
+    color: #222;
     margin: 0;
-    padding: 20px;
+    padding: 0;
 }
 
-h1 {
+h1, h2 {
     text-align: center;
-    color: #2c3e50;
-    font-size: 28px;
-    margin-bottom: 30px;
 }
 
-form {
+.result-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
     background-color: #fff;
-    max-width: 700px;
-    margin: 0 auto;
-    padding: 25px 30px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    border-radius: 16px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
 }
 
-p {
+.tweet-button {
+    display: inline-block;
+    background-color: #1da1f2;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
     font-weight: bold;
+}
+
+.back-button {
+    display: inline-block;
     margin-top: 20px;
-    margin-bottom: 10px;
-}
-
-label {
-    display: block;
-    margin-left: 10px;
-    margin-bottom: 6px;
-    font-weight: normal;
-}
-
-button {
-    display: block;
-    margin: 30px auto 0;
-    padding: 12px 24px;
-    font-size: 16px;
-    background-color: #2c3e50;
-    color: #fff;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-button:hover {
-    background-color: #1a242f;
+    text-decoration: underline;
+    color: #333;
 }
