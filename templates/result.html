@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>診断結果｜定年後スタイル診断</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="result-container">
+        <h1>あなたの定年後スタイルは…</h1>
+        <h2>{{ result_type }}</h2>
+        <p>{{ description }}</p>
+
+        <a href="{{ twitter_url }}" target="_blank" class="tweet-button">診断結果をX（旧Twitter）でシェアする</a>
+        <br><br>
+        <a href="/" class="back-button">もう一度診断する</a>
+    </div>
+</body>
+</html>
