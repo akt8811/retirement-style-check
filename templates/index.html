@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>定年後スタイル診断</title>
+</head>
+<body>
+    <h1>あなたの定年後スタイル診断</h1>
+    <form action="/result" method="post">
+        {% for i in range(1, 11) %}
+            <p><strong>Q{{ i }}.</strong></p>
+            <label><input type="radio" name="q{{ i }}" value="A" required> A</label><br>
+            <label><input type="radio" name="q{{ i }}" value="B"> B</label><br>
+            <label><input type="radio" name="q{{ i }}" value="C"> C</label><br><br>
+        {% endfor %}
+        <button type="submit">診断する</button>
+    </form>
+</body>
+</html>
