@@ -3,16 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <title>定年後スタイル診断</title>
+    <link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
     <h1>あなたの定年後スタイル診断</h1>
     <form action="/result" method="post">
-        {% for i in range(1, 11) %}
-            <p><strong>Q{{ i }}.</strong></p>
-            <label><input type="radio" name="q{{ i }}" value="A" required> A</label><br>
-            <label><input type="radio" name="q{{ i }}" value="B"> B</label><br>
-            <label><input type="radio" name="q{{ i }}" value="C"> C</label><br><br>
-        {% endfor %}
+
+        <p><strong>Q1. 休日の過ごし方、理想は？</strong></p>
+        <label><input type="radio" name="q1" value="A" required> 自宅でゆっくりする</label><br>
+        <label><input type="radio" name="q1" value="B"> 町内のイベントなどに顔を出す</label><br>
+        <label><input type="radio" name="q1" value="C"> 日帰りでもどこかへ出かけたい</label><br><br>
+
+        <p><strong>Q2. 「定年後も働く？」と聞かれたら？</strong></p>
+        <label><input type="radio" name="q2" value="A" required> できれば働きたくない</label><br>
+        <label><input type="radio" name="q2" value="B"> 週に数日くらいなら地域や知人の仕事もあり</label><br>
+        <label><input type="radio" name="q2" value="C"> むしろまだまだ現役として働きたい</label><br><br>
+
+        <p><strong>Q3. 旅行スタイル、どれが好き？</strong></p>
+        <label><input type="radio" name="q3" value="A" required> 旅よりも家がいい</label><br>
+        <label><input type="radio" name="q3" value="B"> 家族や地域の仲間と計画的に行きたい</label><br>
+        <label><input type="radio" name="q3" value="C"> 気ままに一人でふらっと出かけたい</label><br><br>
+
+        <p><strong>Q4. 地域のイベント（お祭り・清掃など）、どう関わりたい？</strong></p>
+        <label><input type="radio" name="q4" value="A" required> 基本は見てるだけでいい</label><br>
+        <label><input type="radio" name="q4" value="B"> 積極的に関わっていきたい</label><br>
+        <label><input type="radio" name="q4" value="C"> 旅の予定がなければ参加するかも</label><br><br>
+
+        <p><strong>Q5. 「将来の夢」はありますか？</strong></p>
+        <label><input type="radio" name="q5" value="A" required> やっとゆっくりできる生活</label><br>
+        <label><input type="radio" name="q5" value="B"> 地元や人のために役立つこと</label><br>
+        <label><input type="radio" name="q5" value="C"> 自分の店を出したり、何か立ち上げたい</label><br><br>
+
+        <p><strong>Q6. 若い人に何か教えてほしいと頼まれたら？</strong></p>
+        <label><input type="radio" name="q6" value="A" required> 面倒なので断る</label><br>
+        <label><input type="radio" name="q6" value="B"> 喜んで引き受ける</label><br>
+        <label><input type="radio" name="q6" value="C"> ビジネスになるなら考える</label><br><br>
+
+        <p><strong>Q7. 家族との時間、どう思う？</strong></p>
+        <label><input type="radio" name="q7" value="A" required> 家で一緒に過ごすのが一番</label><br>
+        <label><input type="radio" name="q7" value="B"> 家族＋地域との関わりも大事</label><br>
+        <label><input type="radio" name="q7" value="C"> 家族の理解があれば自由に動きたい</label><br><br>
+
+        <p><strong>Q8. エスカレーターの立ち位置、どうする？</strong></p>
+        <label><input type="radio" name="q8" value="A" required> いつも右側に立つ（関西）</label><br>
+        <label><input type="radio" name="q8" value="B"> 周りに合わせる</label><br>
+        <label><input type="radio" name="q8" value="C"> 左側に立っておく（関東）</label><br><br>
+
+        <p><strong>Q9. SNSやブログで発信したいと思う？</strong></p>
+        <label><input type="radio" name="q9" value="A" required> 興味ない</label><br>
+        <label><input type="radio" name="q9" value="B"> 地域活動の記録としてなら</label><br>
+        <label><input type="radio" name="q9" value="C"> 自分の活動や旅を発信したい</label><br><br>
+
+        <p><strong>Q10. 退職祝いに何が嬉しい？</strong></p>
+        <label><input type="radio" name="q10" value="A" required> 美味しい食事と静かな時間</label><br>
+        <label><input type="radio" name="q10" value="B"> 地域や仲間からの寄せ書きや声</label><br>
+        <label><input type="radio" name="q10" value="C"> ノートPCやビジネス用グッズ</label><br><br>
+
         <button type="submit">診断する</button>
     </form>
 </body>
